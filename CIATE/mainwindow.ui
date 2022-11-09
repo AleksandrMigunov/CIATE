@@ -1,0 +1,1193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Copyright (C) 2022 Aleksandr Migunov
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 3 of the License, or
+(at your option) any later version.
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+  
+You should have received a copy of the GNU General Public License
+along with this program. If not, see <https://www.gnu.org/licenses/>.-->
+
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>760</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Chechen &amp; Ingush Alphabets and Text Editor</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>720</width>
+      <height>360</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_a">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>400</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>А [a]: letter а [a]</string>
+    </property>
+    <property name="statusTip">
+     <string>А [a]: letter а [a]</string>
+    </property>
+    <property name="text">
+     <string>А а</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_ae">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>400</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Аь аь [æ]: letter аь [æ]</string>
+    </property>
+    <property name="statusTip">
+     <string>Аь аь [æ]: letter аь [æ]</string>
+    </property>
+    <property name="text">
+     <string>Аь аь</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_b">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>400</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Б б [b]: letter бэ [be]</string>
+    </property>
+    <property name="statusTip">
+     <string>Б б [b]: letter бэ [be]</string>
+    </property>
+    <property name="text">
+     <string>Б б</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_v">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>400</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>В в [v]: letter вэ [ve]</string>
+    </property>
+    <property name="statusTip">
+     <string>В в [v]: letter вэ [ve]</string>
+    </property>
+    <property name="text">
+     <string>В в</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_g">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>400</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Г г [g]: letter гэ [ge]</string>
+    </property>
+    <property name="statusTip">
+     <string>Г г [g]: letter гэ [ge]</string>
+    </property>
+    <property name="text">
+     <string>Г г</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_g1">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>400</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>ГІ гІ [ʁ]: letter гІэ [ʁe]</string>
+    </property>
+    <property name="statusTip">
+     <string>ГІ гІ [ʁ]: letter гІэ [ʁe]</string>
+    </property>
+    <property name="text">
+     <string>ГІ гІ</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_d">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>400</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Д д [d]: letter дэ [de]</string>
+    </property>
+    <property name="statusTip">
+     <string>Д д [d]: letter дэ [de]</string>
+    </property>
+    <property name="text">
+     <string>Д д</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_je">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>400</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Е е [e]: letter е [je]</string>
+    </property>
+    <property name="statusTip">
+     <string>Е е [e]: letter е [je]</string>
+    </property>
+    <property name="text">
+     <string>Е е</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_jo">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>400</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Ё ё [jo]: letter ё [jo]</string>
+    </property>
+    <property name="statusTip">
+     <string>Ё ё [jo]: letter ё [jo]</string>
+    </property>
+    <property name="text">
+     <string>Ё ё</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_zh">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>400</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Ж ж [ʒ]: letter же [ʒe]</string>
+    </property>
+    <property name="statusTip">
+     <string>Ж ж [ʒ]: letter же [ʒe]</string>
+    </property>
+    <property name="text">
+     <string>Ж ж</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_z">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>430</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>З з [z]: letter зэ [ze]</string>
+    </property>
+    <property name="statusTip">
+     <string>З з [z]: letter зэ [ze]</string>
+    </property>
+    <property name="text">
+     <string>З з</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_i">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>430</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>И и [i]: letter и [i]</string>
+    </property>
+    <property name="statusTip">
+     <string>И и [i]: letter и [i]</string>
+    </property>
+    <property name="text">
+     <string>И и</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_j">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>430</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Й й [j]: letter йот [jot]</string>
+    </property>
+    <property name="statusTip">
+     <string>Й й [j]: letter йот [jot]</string>
+    </property>
+    <property name="text">
+     <string>Й й</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_k">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>430</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>К к [k]: letter ка [ka]</string>
+    </property>
+    <property name="statusTip">
+     <string>К к [k]: letter ка [ka]</string>
+    </property>
+    <property name="text">
+     <string>К к</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_q">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>430</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Кх кх [q]: letter кха [qa]</string>
+    </property>
+    <property name="statusTip">
+     <string>Кх кх [q]: letter кха [qa]</string>
+    </property>
+    <property name="text">
+     <string>Кх кх</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_q1">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>430</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Къ къ [q']: letter къа [q'a]</string>
+    </property>
+    <property name="statusTip">
+     <string>Къ къ [q']: letter къа [q'a]</string>
+    </property>
+    <property name="text">
+     <string>Къ къ</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_k1">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>430</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>КІ кІ [k']: letter кІа [k'a]</string>
+    </property>
+    <property name="statusTip">
+     <string>КІ кІ [k']: letter кІа [k'a]</string>
+    </property>
+    <property name="text">
+     <string>КІ кІ</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_l">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>430</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Л л [l]: letter эл [el]</string>
+    </property>
+    <property name="statusTip">
+     <string>Л л [l]: letter эл [el]</string>
+    </property>
+    <property name="text">
+     <string>Л л</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_m">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>430</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>М м [m]: letter эм [em]</string>
+    </property>
+    <property name="statusTip">
+     <string>М м [m]: letter эм [em]</string>
+    </property>
+    <property name="text">
+     <string>М м</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_n">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>430</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Н н [n]: letter эн [en]</string>
+    </property>
+    <property name="statusTip">
+     <string>Н н [n]: letter эн [en]</string>
+    </property>
+    <property name="text">
+     <string>Н н</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_o">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>460</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>О о [o]: letter о [o]</string>
+    </property>
+    <property name="statusTip">
+     <string>О о [o]: letter о [o]</string>
+    </property>
+    <property name="text">
+     <string>О о</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_oe">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>460</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Оь оь [ø]: letter оь [ø] (only in Chechen)</string>
+    </property>
+    <property name="statusTip">
+     <string>Оь оь [ø]: letter оь [ø] (only in Chechen)</string>
+    </property>
+    <property name="text">
+     <string>Оь оь</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_p">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>460</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>П п [p]: letter пэ [pe]</string>
+    </property>
+    <property name="statusTip">
+     <string>П п [p]: letter пэ [pe]</string>
+    </property>
+    <property name="text">
+     <string>П п</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_p1">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>460</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>ПІ пІ [p']: letter пІа [p'a]</string>
+    </property>
+    <property name="statusTip">
+     <string>ПІ пІ [p']: letter пІа [p'a]</string>
+    </property>
+    <property name="text">
+     <string>ПІ пІ</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_r">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>460</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Р р [r]: letter эр [er]</string>
+    </property>
+    <property name="statusTip">
+     <string>Р р [r]: letter эр [er]</string>
+    </property>
+    <property name="text">
+     <string>Р р</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_s">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>460</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>С с [s]: letter эс [es]</string>
+    </property>
+    <property name="statusTip">
+     <string>С с [s]: letter эс [es]</string>
+    </property>
+    <property name="text">
+     <string>С с</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_t">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>460</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Т т [t]: letter тэ [te]</string>
+    </property>
+    <property name="statusTip">
+     <string>Т т [t]: letter тэ [te]</string>
+    </property>
+    <property name="text">
+     <string>Т т</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_t1">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>460</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>ТІ тІ [t']: letter тІа [t'a]</string>
+    </property>
+    <property name="statusTip">
+     <string>ТІ тІ [t']: letter тІа [t'a]</string>
+    </property>
+    <property name="text">
+     <string>ТІ тІ</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_u">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>460</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>У у [u]: letter у [u]</string>
+    </property>
+    <property name="statusTip">
+     <string>У у [u]: letter у [u]</string>
+    </property>
+    <property name="text">
+     <string>У у</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_ue">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>460</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Уь уь [y]: letter уь [y] (only in Chechen)</string>
+    </property>
+    <property name="statusTip">
+     <string>Уь уь [y]: letter уь [y] (only in Chechen)</string>
+    </property>
+    <property name="text">
+     <string>Уь уь</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_f">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>490</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Ф ф [f]: letter эф [ef]</string>
+    </property>
+    <property name="statusTip">
+     <string>Ф ф [f]: letter эф [ef]</string>
+    </property>
+    <property name="text">
+     <string>Ф ф</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_x">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>490</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Х х [ꭓ]: letter ха [ꭓa]</string>
+    </property>
+    <property name="statusTip">
+     <string>Х х [ꭓ]: letter ха [ꭓa]</string>
+    </property>
+    <property name="text">
+     <string>Х х</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_x1">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>490</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Хь хь [ħ]: letter хьа [ħa]</string>
+    </property>
+    <property name="statusTip">
+     <string>Хь хь [ħ]: letter хьа [ħa]</string>
+    </property>
+    <property name="text">
+     <string>Хь хь</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_h">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>490</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>ХІ хІ [h]: letter хІа [ha]</string>
+    </property>
+    <property name="statusTip">
+     <string>ХІ хІ [h]: letter хІа [ha]</string>
+    </property>
+    <property name="text">
+     <string>ХІ хІ</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_c">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>490</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Ц ц [ʦ]: letter цэ [ʦe]</string>
+    </property>
+    <property name="statusTip">
+     <string>Ц ц [ʦ]: letter цэ [ʦe]</string>
+    </property>
+    <property name="text">
+     <string>Ц ц</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_c1">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>490</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>ЦІ цІ [ʦ']: letter цІэ [ʦ'e]</string>
+    </property>
+    <property name="statusTip">
+     <string>ЦІ цІ [ʦ']: letter цІэ [ʦ'e]</string>
+    </property>
+    <property name="text">
+     <string>ЦІ цІ</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_ch">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>490</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Ч ч [ʧ]: letter че [ʧe]</string>
+    </property>
+    <property name="statusTip">
+     <string>Ч ч [ʧ]: letter че [ʧe]</string>
+    </property>
+    <property name="text">
+     <string>Ч ч</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_ch1">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>490</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>ЧІ чІ [ʧ']: letter чІа [ʧ'a]</string>
+    </property>
+    <property name="statusTip">
+     <string>ЧІ чІ [ʧ']: letter чІа [ʧ'a]</string>
+    </property>
+    <property name="text">
+     <string>ЧІ чІ</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_sh">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>490</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Ш ш [ʃ]: letter ша [ʃa]</string>
+    </property>
+    <property name="statusTip">
+     <string>Ш ш [ʃ]: letter ша [ʃa]</string>
+    </property>
+    <property name="text">
+     <string>Ш ш</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_shch">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>490</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Щ щ [ɕ]: letter ща [ɕa]</string>
+    </property>
+    <property name="statusTip">
+     <string>Щ щ [ɕ]: letter ща [ɕa]</string>
+    </property>
+    <property name="text">
+     <string>Щ щ</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_hard_sign">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>520</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Ъ ъ [ɂ]: letter чІоагІа хьарак [ʧ'oaɤa ħarak] (hard sign)</string>
+    </property>
+    <property name="statusTip">
+     <string>Ъ ъ [ɂ]: letter чІоагІа хьарак [ʧ'oaɤa ħarak] (hard sign)</string>
+    </property>
+    <property name="text">
+     <string>Ъ ъ</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_y">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>520</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Ы ы [ɨ]: letter ы [ɨ]</string>
+    </property>
+    <property name="statusTip">
+     <string>Ы ы [ɨ]: letter ы [ɨ]</string>
+    </property>
+    <property name="text">
+     <string>Ы ы</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_soft_sign">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>520</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Ь ь (not pronounced): letter кІаьда хьарак [k'æda ħarak] (soft sign)</string>
+    </property>
+    <property name="statusTip">
+     <string>Ь ь (not pronounced): letter кІаьда хьарак [k'æda ħarak] (soft sign)</string>
+    </property>
+    <property name="text">
+     <string>Ь ь</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_e">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>520</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Э э [e]: letter э [e]</string>
+    </property>
+    <property name="statusTip">
+     <string>Э э [e]: letter э [e]</string>
+    </property>
+    <property name="text">
+     <string>Э э</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_ju">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>520</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Ю ю [ju]: letter ю [ju]</string>
+    </property>
+    <property name="statusTip">
+     <string>Ю ю [ju]: letter ю [ju]</string>
+    </property>
+    <property name="text">
+     <string>Ю ю</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_jue">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>520</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Юь юь [jy]: letter юь [jy] (only in Chechen)</string>
+    </property>
+    <property name="statusTip">
+     <string>Юь юь [jy]: letter юь [jy] (only in Chechen)</string>
+    </property>
+    <property name="text">
+     <string>Юь юь</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_ja">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>520</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Я я [ja]: letter я [ja]</string>
+    </property>
+    <property name="statusTip">
+     <string>Я я [ja]: letter я [ja]</string>
+    </property>
+    <property name="text">
+     <string>Я я</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_jae">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>520</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Яь яь [jæ]: letter яь [jæ]</string>
+    </property>
+    <property name="statusTip">
+     <string>Яь яь [jæ]: letter яь [jæ]</string>
+    </property>
+    <property name="text">
+     <string>Яь Яь</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_stick">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>520</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>І І [ʕ]: letter Іайн [ʕain]</string>
+    </property>
+    <property name="statusTip">
+     <string>І І [ʕ]: letter Іайн [ʕain]</string>
+    </property>
+    <property name="text">
+     <string>І І</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_upper">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>400</y>
+      <width>110</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Upper Case</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_lower">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>430</y>
+      <width>110</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Lower Case</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_capitalize">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>460</y>
+      <width>110</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Capitalize</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_space">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>520</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>І І [ʕ]: letter Іайн [ʕain]</string>
+    </property>
+    <property name="statusTip">
+     <string>І І [ʕ]: letter Іайн [ʕain]</string>
+    </property>
+    <property name="text">
+     <string>Space</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>760</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionNew"/>
+    <addaction name="actionOpen"/>
+    <addaction name="actionEncoding"/>
+    <addaction name="actionSave_as_UTF_8"/>
+    <addaction name="actionSave_as"/>
+    <addaction name="actionClose"/>
+    <addaction name="separator"/>
+    <addaction name="actionHide"/>
+    <addaction name="actionShow"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionUndo"/>
+    <addaction name="actionRedo"/>
+    <addaction name="separator"/>
+    <addaction name="actionCut"/>
+    <addaction name="actionCopy"/>
+    <addaction name="actionPaste"/>
+    <addaction name="actionSelect_All"/>
+    <addaction name="separator"/>
+    <addaction name="actionFind"/>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>View</string>
+    </property>
+    <addaction name="actionZoom_In"/>
+    <addaction name="actionZoom_Out"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionAbout"/>
+    <addaction name="actionAbout_Qt"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuView"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionNew">
+   <property name="text">
+    <string>New</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionUndo">
+   <property name="text">
+    <string>Undo</string>
+   </property>
+  </action>
+  <action name="actionRedo">
+   <property name="text">
+    <string>Redo</string>
+   </property>
+  </action>
+  <action name="actionSelect_All">
+   <property name="text">
+    <string>Select All</string>
+   </property>
+  </action>
+  <action name="actionCopy">
+   <property name="text">
+    <string>Copy</string>
+   </property>
+  </action>
+  <action name="actionPaste">
+   <property name="text">
+    <string>Paste</string>
+   </property>
+  </action>
+  <action name="actionFind">
+   <property name="text">
+    <string>Find</string>
+   </property>
+  </action>
+  <action name="actionCut">
+   <property name="text">
+    <string>Cut</string>
+   </property>
+  </action>
+  <action name="actionZoom_In">
+   <property name="text">
+    <string>Zoom In</string>
+   </property>
+  </action>
+  <action name="actionZoom_Out">
+   <property name="text">
+    <string>Zoom Out</string>
+   </property>
+  </action>
+  <action name="actionHide">
+   <property name="text">
+    <string>Hide text window</string>
+   </property>
+  </action>
+  <action name="actionShow">
+   <property name="text">
+    <string>Show text window</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionEncoding">
+   <property name="text">
+    <string>Encoding</string>
+   </property>
+  </action>
+  <action name="actionSave_as_UTF_8">
+   <property name="text">
+    <string>Save as UTF-8</string>
+   </property>
+  </action>
+  <action name="actionSave_as">
+   <property name="text">
+    <string>Save as</string>
+   </property>
+  </action>
+  <action name="actionClose">
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionAbout_Qt">
+   <property name="text">
+    <string>About Qt</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
