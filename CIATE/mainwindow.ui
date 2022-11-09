@@ -637,10 +637,10 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.-->
      </rect>
     </property>
     <property name="toolTip">
-     <string>Х х [ꭓ]: letter ха [ꭓa]</string>
+     <string>Х х [χ]: letter ха [χa]</string>
     </property>
     <property name="statusTip">
-     <string>Х х [ꭓ]: letter ха [ꭓa]</string>
+     <string>Х х [χ]: letter ха [χa]</string>
     </property>
     <property name="text">
      <string>Х х</string>
@@ -808,10 +808,10 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.-->
      </rect>
     </property>
     <property name="toolTip">
-     <string>Ъ ъ [ɂ]: letter чІоагІа хьарак [ʧ'oaɤa ħarak] (hard sign)</string>
+     <string>Ъ ъ [ʔ]: letter чІоагІа хьарак [ʧ'oaɤa ħarak] (hard sign)</string>
     </property>
     <property name="statusTip">
-     <string>Ъ ъ [ɂ]: letter чІоагІа хьарак [ʧ'oaɤa ħarak] (hard sign)</string>
+     <string>Ъ ъ [ʔ]: letter чІоагІа хьарак [ʧ'oaɤa ħarak] (hard sign)</string>
     </property>
     <property name="text">
      <string>Ъ ъ</string>
@@ -1017,12 +1017,6 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.-->
       <height>30</height>
      </rect>
     </property>
-    <property name="toolTip">
-     <string>І І [ʕ]: letter Іайн [ʕain]</string>
-    </property>
-    <property name="statusTip">
-     <string>І І [ʕ]: letter Іайн [ʕain]</string>
-    </property>
     <property name="text">
      <string>Space</string>
     </property>
@@ -1034,7 +1028,7 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.-->
      <x>0</x>
      <y>0</y>
      <width>760</width>
-     <height>27</height>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">

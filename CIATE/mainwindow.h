@@ -25,8 +25,8 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
-    MainWindow(QWidget *parent = nullptr);
-    //MainWindow(QWidget *parent = 0); // for older Qt5
+    //MainWindow(QWidget *parent = nullptr);
+    MainWindow(QWidget *parent = 0); // for older Qt5
     ~MainWindow();
     bool UpperCase;
     bool LowerCase;
