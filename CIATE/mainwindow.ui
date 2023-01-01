@@ -1,18 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<!--Copyright (C) 2022 Aleksandr Migunov
-This program is free software; you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation; either version 3 of the License, or
-(at your option) any later version.
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-  
-You should have received a copy of the GNU General Public License
-along with this program. If not, see <https://www.gnu.org/licenses/>.-->
-
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>MainWindow</class>
  <widget class="QMainWindow" name="MainWindow">
@@ -21,7 +7,7 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.-->
     <x>0</x>
     <y>0</y>
     <width>760</width>
-    <height>600</height>
+    <height>640</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -33,7 +19,7 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.-->
      <rect>
       <x>20</x>
       <y>20</y>
-      <width>720</width>
+      <width>350</width>
       <height>360</height>
      </rect>
     </property>
@@ -48,10 +34,10 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.-->
      </rect>
     </property>
     <property name="toolTip">
-     <string>А [a]: letter а [a]</string>
+     <string>А а [a]: letter а [a]</string>
     </property>
     <property name="statusTip">
-     <string>А [a]: letter а [a]</string>
+     <string>А а [a]: letter а [a]</string>
     </property>
     <property name="text">
      <string>А а</string>
@@ -276,10 +262,10 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.-->
      </rect>
     </property>
     <property name="toolTip">
-     <string>Й й [j]: letter йот [jot]</string>
+     <string>Й й [j]: letter йот [jot] (in Chechen доца и [dotsa i] - short i)</string>
     </property>
     <property name="statusTip">
-     <string>Й й [j]: letter йот [jot]</string>
+     <string>Й й [j]: letter йот [jot] (in Chechen доца и [dotsa i] - short i)</string>
     </property>
     <property name="text">
      <string>Й й</string>
@@ -637,10 +623,10 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.-->
      </rect>
     </property>
     <property name="toolTip">
-     <string>Х х [χ]: letter ха [χa]</string>
+     <string>Х х [ꭓ]: letter ха [ꭓa]</string>
     </property>
     <property name="statusTip">
-     <string>Х х [χ]: letter ха [χa]</string>
+     <string>Х х [ꭓ]: letter ха [ꭓa]</string>
     </property>
     <property name="text">
      <string>Х х</string>
@@ -808,10 +794,10 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.-->
      </rect>
     </property>
     <property name="toolTip">
-     <string>Ъ ъ [ʔ]: letter чІоагІа хьарак [ʧ'oaɤa ħarak] (hard sign)</string>
+     <string>Ъ ъ [ɂ]: letter чІоагІа хьарак [ʧ'oaɤa ħarak] (hard sign) (in Chechen чІогІа хьаьрк [ʧ'oɤa ħærk])</string>
     </property>
     <property name="statusTip">
-     <string>Ъ ъ [ʔ]: letter чІоагІа хьарак [ʧ'oaɤa ħarak] (hard sign)</string>
+     <string>Ъ ъ [ɂ]: letter чІоагІа хьарак [ʧ'oaɤa ħarak] (hard sign) (in Chechen чІогІа хьаьрк [ʧ'oɤa ħærk])</string>
     </property>
     <property name="text">
      <string>Ъ ъ</string>
@@ -846,10 +832,10 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.-->
      </rect>
     </property>
     <property name="toolTip">
-     <string>Ь ь (not pronounced): letter кІаьда хьарак [k'æda ħarak] (soft sign)</string>
+     <string>Ь ь (not pronounced): letter кІаьда хьарак [k'æda ħarak] (soft sign) (in Chechen кІеда хьаьрк [k'eda ħærk])</string>
     </property>
     <property name="statusTip">
-     <string>Ь ь (not pronounced): letter кІаьда хьарак [k'æda ħarak] (soft sign)</string>
+     <string>Ь ь (not pronounced): letter кІаьда хьарак [k'æda ħarak] (soft sign) (in Chechen кІеда хьаьрк [k'eda ħærk])</string>
     </property>
     <property name="text">
      <string>Ь ь</string>
@@ -960,10 +946,10 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.-->
      </rect>
     </property>
     <property name="toolTip">
-     <string>І І [ʕ]: letter Іайн [ʕain]</string>
+     <string>І І [ʕ]: letter Іайн [ʕain] (in Chechen Іа [ʕa])</string>
     </property>
     <property name="statusTip">
-     <string>І І [ʕ]: letter Іайн [ʕain]</string>
+     <string>І І [ʕ]: letter Іайн [ʕain] (in Chechen Іа [ʕa])</string>
     </property>
     <property name="text">
      <string>І І</string>
@@ -1017,8 +1003,205 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.-->
       <height>30</height>
      </rect>
     </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="statusTip">
+     <string/>
+    </property>
     <property name="text">
      <string>Space</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_Audio">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>510</y>
+      <width>111</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Audio</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit_2">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>20</y>
+      <width>350</width>
+      <height>360</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_n1">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>560</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="statusTip">
+     <string/>
+    </property>
+    <property name="text">
+     <string>НІ нІ</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_v1">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>560</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="statusTip">
+     <string/>
+    </property>
+    <property name="text">
+     <string>ВІ вІ</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_j1">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>560</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="statusTip">
+     <string/>
+    </property>
+    <property name="text">
+     <string>ЙІ йІ</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_d1">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>560</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="statusTip">
+     <string/>
+    </property>
+    <property name="text">
+     <string>ДІ дІ</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_m1">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>560</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="statusTip">
+     <string/>
+    </property>
+    <property name="text">
+     <string>МІ мІ</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_b1">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>560</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="statusTip">
+     <string/>
+    </property>
+    <property name="text">
+     <string>БІ бІ</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_z1">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>560</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="statusTip">
+     <string/>
+    </property>
+    <property name="text">
+     <string>ЗІ зІ</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_zh1">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>560</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="statusTip">
+     <string/>
+    </property>
+    <property name="text">
+     <string>ЖІ жІ</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>560</y>
+      <width>210</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Additional Ingush letters</string>
     </property>
    </widget>
   </widget>
@@ -1028,7 +1211,7 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.-->
      <x>0</x>
      <y>0</y>
      <width>760</width>
-     <height>21</height>
+     <height>27</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">
@@ -1044,6 +1227,8 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.-->
     <addaction name="separator"/>
     <addaction name="actionHide"/>
     <addaction name="actionShow"/>
+    <addaction name="separator"/>
+    <addaction name="actionClear_info"/>
     <addaction name="separator"/>
     <addaction name="actionExit"/>
    </widget>
@@ -1075,9 +1260,21 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.-->
     <addaction name="actionAbout"/>
     <addaction name="actionAbout_Qt"/>
    </widget>
+   <widget class="QMenu" name="menuAudio">
+    <property name="title">
+     <string>Audio</string>
+    </property>
+    <addaction name="actionIngush_alphabet"/>
+    <addaction name="separator"/>
+    <addaction name="actionAlphabet_1"/>
+    <addaction name="actionAlphabet_2"/>
+    <addaction name="actionAlphabet_3"/>
+    <addaction name="actionAlphabet_4"/>
+   </widget>
    <addaction name="menuFile"/>
    <addaction name="menuEdit"/>
    <addaction name="menuView"/>
+   <addaction name="menuAudio"/>
    <addaction name="menuHelp"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
@@ -1168,7 +1365,7 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.-->
   </action>
   <action name="actionClose">
    <property name="text">
-    <string>Close</string>
+    <string>Close / clear text</string>
    </property>
   </action>
   <action name="actionAbout">
@@ -1179,6 +1376,36 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.-->
   <action name="actionAbout_Qt">
    <property name="text">
     <string>About Qt</string>
+   </property>
+  </action>
+  <action name="actionAlphabet_1">
+   <property name="text">
+    <string>Alphabet 1</string>
+   </property>
+  </action>
+  <action name="actionAlphabet_2">
+   <property name="text">
+    <string>Alphabet 2</string>
+   </property>
+  </action>
+  <action name="actionAlphabet_3">
+   <property name="text">
+    <string>Alphabet 3</string>
+   </property>
+  </action>
+  <action name="actionAlphabet_4">
+   <property name="text">
+    <string>Alphabet 4</string>
+   </property>
+  </action>
+  <action name="actionClear_info">
+   <property name="text">
+    <string>Clear information</string>
+   </property>
+  </action>
+  <action name="actionIngush_alphabet">
+   <property name="text">
+    <string>Ingush alphabet</string>
    </property>
   </action>
  </widget>

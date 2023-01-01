@@ -25,8 +25,8 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
-    //MainWindow(QWidget *parent = nullptr);
-    MainWindow(QWidget *parent = 0); // for older Qt5
+    MainWindow(QWidget *parent = nullptr);
+    //MainWindow(QWidget *parent = 0); // for older Qt5
     ~MainWindow();
     bool UpperCase;
     bool LowerCase;
@@ -34,6 +34,7 @@ public:
     QString FileOpened;
     QString NewOpened;
     QString Encoding;
+    bool Audio_On;
 
 private slots:
     void on_pushButton_upper_clicked();
@@ -181,6 +182,36 @@ private slots:
     void on_actionAbout_triggered();
 
     void on_actionAbout_Qt_triggered();
+
+    void on_actionAlphabet_1_triggered();
+
+    void on_actionAlphabet_2_triggered();
+
+    void on_actionAlphabet_3_triggered();
+
+    void on_actionAlphabet_4_triggered();
+
+    void on_checkBox_Audio_stateChanged(int arg1);
+
+    void on_actionClear_info_triggered();
+
+    void on_pushButton_b1_clicked();
+
+    void on_pushButton_v1_clicked();
+
+    void on_actionIngush_alphabet_triggered();
+
+    void on_pushButton_d1_clicked();
+
+    void on_pushButton_zh1_clicked();
+
+    void on_pushButton_z1_clicked();
+
+    void on_pushButton_j1_clicked();
+
+    void on_pushButton_m1_clicked();
+
+    void on_pushButton_n1_clicked();
 
 private:
     Ui::MainWindow *ui;

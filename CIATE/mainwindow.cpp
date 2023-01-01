@@ -25,6 +25,7 @@ along with this program. If not, see <https://www.gnu.org/licenses/>. */
 #include <QColor>
 #include <QStringList>
 #include <QDir>
+#include <QSound>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -39,6 +40,8 @@ MainWindow::MainWindow(QWidget *parent)
     NewOpened = "";
     FileOpened = "";
     Encoding = "";
+
+    Audio_On = false;
 }
 
 MainWindow::~MainWindow()
@@ -71,6 +74,16 @@ void MainWindow::on_pushButton_capitalize_clicked()
     LowerCase = false;
 }
 
+void MainWindow::on_checkBox_Audio_stateChanged(int arg1)
+{
+    if (arg1) {
+        Audio_On = true;
+    } else {
+        Audio_On = false;
+    }
+
+}
+
 void MainWindow::on_pushButton_a_clicked()
 {
     if (UpperCase == false) {
@@ -86,6 +99,14 @@ void MainWindow::on_pushButton_a_clicked()
             LowerCase = true;
         }
     }
+
+    if (Audio_On) {
+        QSound::play("audios/01a.wav");
+    }
+
+    QString info1 = "А а: open front unrounded vowel / low front unrounded vowel; pronounced as a in father or as o in hot or as u in bus";
+    ui->textEdit_2->insertPlainText(info1);
+    ui->textEdit_2->insertPlainText("\n\n");
 }
 
 void MainWindow::on_pushButton_ae_clicked()
@@ -105,6 +126,14 @@ void MainWindow::on_pushButton_ae_clicked()
         QString AE = "АЬ";
         ui->textEdit->insertPlainText(AE);
     }
+
+    if (Audio_On) {
+        QSound::play("audios/02ae.wav");
+    }
+
+    QString info2 = "Аь аь: near-open front unrounded vowel / near-low front unrounded vowel; pronounced as a in hat";
+    ui->textEdit_2->insertPlainText(info2);
+    ui->textEdit_2->insertPlainText("\n\n");
 }
 
 
@@ -123,6 +152,14 @@ void MainWindow::on_pushButton_b_clicked()
             LowerCase = true;
         }
     }
+
+    if (Audio_On) {
+        QSound::play("audios/03b.wav");
+    }
+
+    QString info3 = "Б б: voiced bilabial plosive / stop; pronounced as b in bet";
+    ui->textEdit_2->insertPlainText(info3);
+    ui->textEdit_2->insertPlainText("\n\n");
 }
 
 void MainWindow::on_pushButton_v_clicked()
@@ -140,6 +177,15 @@ void MainWindow::on_pushButton_v_clicked()
             LowerCase = true;
         }
     }
+
+    if (Audio_On) {
+        QSound::play("audios/04v.wav");
+    }
+
+    QString info4 = "В в: voiced labiodental fricative; pronounced as v in verse; "
+                    "after a vowel and sometimes in other positions: voiced labial-velar approximant, pronounced as w in wet";
+    ui->textEdit_2->insertPlainText(info4);
+    ui->textEdit_2->insertPlainText("\n\n");
 }
 
 void MainWindow::on_pushButton_g_clicked()
@@ -157,6 +203,14 @@ void MainWindow::on_pushButton_g_clicked()
             LowerCase = true;
         }
     }
+
+    if (Audio_On) {
+        QSound::play("audios/05g.wav");
+    }
+
+    QString info5 = "Г г: voiced velar plosive / stop; pronounced as g in got";
+    ui->textEdit_2->insertPlainText(info5);
+    ui->textEdit_2->insertPlainText("\n\n");
 }
 
 void MainWindow::on_pushButton_g1_clicked()
@@ -174,6 +228,14 @@ void MainWindow::on_pushButton_g1_clicked()
             LowerCase = true;
         }
     }
+
+    if (Audio_On) {
+        QSound::play("audios/06gh.wav");
+    }
+
+    QString info6 = "ГІ гІ: voiced uvular fricative; has no English equivalent, pronounced similarly to French or German uvular r; sounds like fricative g";
+    ui->textEdit_2->insertPlainText(info6);
+    ui->textEdit_2->insertPlainText("\n\n");
 }
 
 void MainWindow::on_pushButton_d_clicked()
@@ -191,6 +253,14 @@ void MainWindow::on_pushButton_d_clicked()
             LowerCase = true;
         }
     }
+
+    if (Audio_On) {
+        QSound::play("audios/07d.wav");
+    }
+
+    QString info7 = "Д д: voiced dental plosive / stop; pronounced like d in dog";
+    ui->textEdit_2->insertPlainText(info7);
+    ui->textEdit_2->insertPlainText("\n\n");
 }
 
 void MainWindow::on_pushButton_je_clicked()
@@ -208,6 +278,16 @@ void MainWindow::on_pushButton_je_clicked()
             LowerCase = true;
         }
     }
+
+    if (Audio_On) {
+        QSound::play("audios/08je.wav");
+    }
+
+    QString info8 = "Е е: in the beginning of a word or after a vowel: a combination of voiced palatal approximant and "
+                    "close-mid front unrounded vowel / high-mid front unrounded vowel; pronounced as ye in yes; after a consonant: "
+                    "close-mid front unrounded vowel / high-mid front unrounded vowel, pronounced as e in bet";
+    ui->textEdit_2->insertPlainText(info8);
+    ui->textEdit_2->insertPlainText("\n\n");
 }
 
 void MainWindow::on_pushButton_jo_clicked()
@@ -225,6 +305,16 @@ void MainWindow::on_pushButton_jo_clicked()
             LowerCase = true;
         }
     }
+
+    if (Audio_On) {
+        QSound::play("audios/09jo.wav");
+    }
+
+    QString info9 = "Ё ё: in the beginning of a word or after a vowel: a combination of voiced palatal approximant and "
+                    "close-mid back rounded vowel / high-mid back rounded vowel; pronounced as yaw in yawn; after a consonant: "
+                    "close-mid back rounded vowel / high-mid back rounded vowel; pronounced as a in talk";
+    ui->textEdit_2->insertPlainText(info9);
+    ui->textEdit_2->insertPlainText("\n\n");
 }
 
 void MainWindow::on_pushButton_zh_clicked()
@@ -242,6 +332,15 @@ void MainWindow::on_pushButton_zh_clicked()
             LowerCase = true;
         }
     }
+
+    if (Audio_On) {
+        QSound::play("audios/10zh.wav");
+    }
+
+    QString info10 = "Ж ж: voiced postalveolar fricative (sibilant), pronounced as s in measure; "
+                     "in some words in the end or in the beginning: voiced post-alveolar affricate (sibilant), pronounced as j in just";
+    ui->textEdit_2->insertPlainText(info10);
+    ui->textEdit_2->insertPlainText("\n\n");
 }
 
 void MainWindow::on_pushButton_z_clicked()
@@ -259,6 +358,15 @@ void MainWindow::on_pushButton_z_clicked()
             LowerCase = true;
         }
     }
+
+    if (Audio_On) {
+        QSound::play("audios/11z.wav");
+    }
+
+    QString info11 = "З з: voiced alveolar fricative (sibilant); prounounced as z in zoo; "
+                     "in some words in the end or in the beginning: voiced alveolar affricate (sibilant); pronounced as d and z together (like ds in stands)";
+    ui->textEdit_2->insertPlainText(info11);
+    ui->textEdit_2->insertPlainText("\n\n");
 }
 
 void MainWindow::on_pushButton_i_clicked()
@@ -276,6 +384,14 @@ void MainWindow::on_pushButton_i_clicked()
             LowerCase = true;
         }
     }
+
+    if (Audio_On) {
+        QSound::play("audios/12i.wav");
+    }
+
+    QString info12 = "И и: close front unrounded vowel / high front unrounded vowel; pronounced as ee in see or as i in sit";
+    ui->textEdit_2->insertPlainText(info12);
+    ui->textEdit_2->insertPlainText("\n\n");
 }
 
 void MainWindow::on_pushButton_j_clicked()
@@ -293,6 +409,14 @@ void MainWindow::on_pushButton_j_clicked()
             LowerCase = true;
         }
     }
+
+    if (Audio_On) {
+        QSound::play("audios/13j.wav");
+    }
+
+    QString info13 = "Й й: voiced palatal approximant; pronounced as y in yes";
+    ui->textEdit_2->insertPlainText(info13);
+    ui->textEdit_2->insertPlainText("\n\n");
 }
 
 void MainWindow::on_pushButton_k_clicked()
@@ -310,6 +434,14 @@ void MainWindow::on_pushButton_k_clicked()
             LowerCase = true;
         }
     }
+
+    if (Audio_On) {
+        QSound::play("audios/14k.wav");
+    }
+
+    QString info14 = "К к: voiceless velar plosive / stop; pronounced as c in cat";
+    ui->textEdit_2->insertPlainText(info14);
+    ui->textEdit_2->insertPlainText("\n\n");
 }
 
 void MainWindow::on_pushButton_q_clicked()
@@ -329,6 +461,15 @@ void MainWindow::on_pushButton_q_clicked()
         QString Q = "КХ";
         ui->textEdit->insertPlainText(Q);
     }
+
+    if (Audio_On) {
+        QSound::play("audios/15q.wav");
+    }
+
+    QString info15 = "Кх кх: voiceless uvular plosive / stop; has no English equivalent, sounds like a \"back\" k (q), "
+                     "pronounced like Hebrew qof (though not in modern Hebrew pronunciation)";
+    ui->textEdit_2->insertPlainText(info15);
+    ui->textEdit_2->insertPlainText("\n\n");
 }
 
 void MainWindow::on_pushButton_q1_clicked()
@@ -348,6 +489,14 @@ void MainWindow::on_pushButton_q1_clicked()
         QString Q1 = "КЪ";
         ui->textEdit->insertPlainText(Q1);
     }
+
+    if (Audio_On) {
+        QSound::play("audios/16qh.wav");
+    }
+
+    QString info16 = "Къ къ: voiceless ejective uvular plosive / stop; has no English equivalent, sounds like very sharp q (\"back\" k)";
+    ui->textEdit_2->insertPlainText(info16);
+    ui->textEdit_2->insertPlainText("\n\n");
 }
 
 void MainWindow::on_pushButton_k1_clicked()
@@ -365,6 +514,14 @@ void MainWindow::on_pushButton_k1_clicked()
             LowerCase = true;
         }
     }
+
+    if (Audio_On) {
+        QSound::play("audios/17kh.wav");
+    }
+
+    QString info17 = "КІ кІ: voiceless ejective velar plosive / stop; has no English equivalent, sounds like very sharp k";
+    ui->textEdit_2->insertPlainText(info17);
+    ui->textEdit_2->insertPlainText("\n\n");
 }
 
 void MainWindow::on_pushButton_l_clicked()
@@ -382,6 +539,14 @@ void MainWindow::on_pushButton_l_clicked()
             LowerCase = true;
         }
     }
+
+    if (Audio_On) {
+        QSound::play("audios/18l.wav");
+    }
+
+    QString info18 = "Л л: voiced alveolar lateral approximant; pronounced as l in leg";
+    ui->textEdit_2->insertPlainText(info18);
+    ui->textEdit_2->insertPlainText("\n\n");
 }
 
 void MainWindow::on_pushButton_m_clicked()
@@ -399,6 +564,14 @@ void MainWindow::on_pushButton_m_clicked()
             LowerCase = true;
         }
     }
+
+    if (Audio_On) {
+        QSound::play("audios/19m.wav");
+    }
+
+    QString info19 = "М м: voiced bilabial nasal; pronounced as m in mark";
+    ui->textEdit_2->insertPlainText(info19);
+    ui->textEdit_2->insertPlainText("\n\n");
 }
 
 void MainWindow::on_pushButton_n_clicked()
@@ -416,6 +589,14 @@ void MainWindow::on_pushButton_n_clicked()
             LowerCase = true;
         }
     }
+
+    if (Audio_On) {
+        QSound::play("audios/20n.wav");
+    }
+
+    QString info20 = "Н н: voiced alveolar nasal; pronounced as n in none";
+    ui->textEdit_2->insertPlainText(info20);
+    ui->textEdit_2->insertPlainText("\n\n");
 }
 
 void MainWindow::on_pushButton_o_clicked()
@@ -433,6 +614,14 @@ void MainWindow::on_pushButton_o_clicked()
             LowerCase = true;
         }
     }
+
+    if (Audio_On) {
+        QSound::play("audios/21o.wav");
+    }
+
+    QString info21 = "О о: close-mid back rounded vowel / high-mid back rounded vowel; pronounced as a in talk";
+    ui->textEdit_2->insertPlainText(info21);
+    ui->textEdit_2->insertPlainText("\n\n");
 }
 
 void MainWindow::on_pushButton_oe_clicked()
@@ -452,6 +641,15 @@ void MainWindow::on_pushButton_oe_clicked()
         QString OE = "ОЬ";
         ui->textEdit->insertPlainText(OE);
     }
+
+    if (Audio_On) {
+        QSound::play("audios/22oe.wav");
+    }
+
+    QString info22 = "Оь оь: close-mid central rounded vowel / high-mid central rounded vowel; "
+                     "has no English equivalent, sounds a little bit similar to ir in birth, pronounced like ö in German";
+    ui->textEdit_2->insertPlainText(info22);
+    ui->textEdit_2->insertPlainText("\n\n");
 }
 
 void MainWindow::on_pushButton_p_clicked()
@@ -469,6 +667,14 @@ void MainWindow::on_pushButton_p_clicked()
             LowerCase = true;
         }
     }
+
+    if (Audio_On) {
+        QSound::play("audios/23p.wav");
+    }
+
+    QString info23 = "П п: voiceless bilabial plosive or stop; pronounced as p in pen";
+    ui->textEdit_2->insertPlainText(info23);
+    ui->textEdit_2->insertPlainText("\n\n");
 }
 
 void MainWindow::on_pushButton_p1_clicked()
@@ -486,6 +692,14 @@ void MainWindow::on_pushButton_p1_clicked()
             LowerCase = true;
         }
     }
+
+    if (Audio_On) {
+        QSound::play("audios/24ph.wav");
+    }
+
+    QString info24 = "ПІ пІ: voiceless ejective bilabial plosive or stop; has no English equivalent, sounds like very sharp p";
+    ui->textEdit_2->insertPlainText(info24);
+    ui->textEdit_2->insertPlainText("\n\n");
 }
 
 void MainWindow::on_pushButton_r_clicked()
@@ -503,6 +717,14 @@ void MainWindow::on_pushButton_r_clicked()
             LowerCase = true;
         }
     }
+
+    if (Audio_On) {
+        QSound::play("audios/25r.wav");
+    }
+
+    QString info25 = "Р р: voiced alveolar trill; pronounced somewhat similarly to English r in roar";
+    ui->textEdit_2->insertPlainText(info25);
+    ui->textEdit_2->insertPlainText("\n\n");
 }
 
 void MainWindow::on_pushButton_s_clicked()
@@ -520,6 +742,14 @@ void MainWindow::on_pushButton_s_clicked()
             LowerCase = true;
         }
     }
+
+    if (Audio_On) {
+        QSound::play("audios/26s.wav");
+    }
+
+    QString info26 = "С с: voiceless alveolar fricative (siblilant); pronounced as s in sauce";
+    ui->textEdit_2->insertPlainText(info26);
+    ui->textEdit_2->insertPlainText("\n\n");
 }
 
 void MainWindow::on_pushButton_t_clicked()
@@ -537,6 +767,14 @@ void MainWindow::on_pushButton_t_clicked()
             LowerCase = true;
         }
     }
+
+    if (Audio_On) {
+        QSound::play("audios/27t.wav");
+    }
+
+    QString info27 = "Т т: voiceless dental plosive / stop; pronounced like t in ten";
+    ui->textEdit_2->insertPlainText(info27);
+    ui->textEdit_2->insertPlainText("\n\n");
 }
 
 void MainWindow::on_pushButton_t1_clicked()
@@ -554,6 +792,14 @@ void MainWindow::on_pushButton_t1_clicked()
             LowerCase = true;
         }
     }
+
+    if (Audio_On) {
+        QSound::play("audios/28th.wav");
+    }
+
+    QString info28 = "ТІ тІ: voiceless ejective dental plosive / stop; has no English equivalent, sounds like very sharp t";
+    ui->textEdit_2->insertPlainText(info28);
+    ui->textEdit_2->insertPlainText("\n\n");
 }
 
 void MainWindow::on_pushButton_u_clicked()
@@ -571,6 +817,14 @@ void MainWindow::on_pushButton_u_clicked()
             LowerCase = true;
         }
     }
+
+    if (Audio_On) {
+        QSound::play("audios/29u.wav");
+    }
+
+    QString info29 = "У у: close back rounded vowel / high back rounded vowel; pronounced as oo in book";
+    ui->textEdit_2->insertPlainText(info29);
+    ui->textEdit_2->insertPlainText("\n\n");
 }
 
 void MainWindow::on_pushButton_ue_clicked()
@@ -590,6 +844,15 @@ void MainWindow::on_pushButton_ue_clicked()
         QString UE = "УЬ";
         ui->textEdit->insertPlainText(UE);
     }
+
+    if (Audio_On) {
+        QSound::play("audios/30ue.wav");
+    }
+
+    QString info30 = "Уь уь: close front rounded vowel, or high front rounded vowel; "
+                     "has no English equivalent, pronounced as ü in German and sounds somewhat like soft oo";
+    ui->textEdit_2->insertPlainText(info30);
+    ui->textEdit_2->insertPlainText("\n\n");
 }
 
 void MainWindow::on_pushButton_f_clicked()
@@ -607,6 +870,14 @@ void MainWindow::on_pushButton_f_clicked()
             LowerCase = true;
         }
     }
+
+    if (Audio_On) {
+        QSound::play("audios/31f.wav");
+    }
+
+    QString info31 = "Ф ф: voiceless labiodental fricative; pronounced as f in fall";
+    ui->textEdit_2->insertPlainText(info31);
+    ui->textEdit_2->insertPlainText("\n\n");
 }
 
 void MainWindow::on_pushButton_x_clicked()
@@ -624,6 +895,14 @@ void MainWindow::on_pushButton_x_clicked()
             LowerCase = true;
         }
     }
+
+    if (Audio_On) {
+        QSound::play("audios/32kh.wav");
+    }
+
+    QString info32 = "Х х: voiceless uvular fricative; has no English equivalent, pronounced like ch in Scottish and German (in some words); sounds like fricative k";
+    ui->textEdit_2->insertPlainText(info32);
+    ui->textEdit_2->insertPlainText("\n\n");
 }
 
 void MainWindow::on_pushButton_x1_clicked()
@@ -643,6 +922,15 @@ void MainWindow::on_pushButton_x1_clicked()
         QString X1 = "ХЬ";
         ui->textEdit->insertPlainText(X1);
     }
+
+    if (Audio_On) {
+        QSound::play("audios/33qh.wav");
+    }
+
+    QString info33 = "Хь хь: voiceless pharyngeal fricative; "
+                     "has no English equivalent, pronounced like het in Hebrew (but not in modern pronunciation); sounds somewhat like previous sound but softened";
+    ui->textEdit_2->insertPlainText(info33);
+    ui->textEdit_2->insertPlainText("\n\n");
 }
 
 void MainWindow::on_pushButton_h_clicked()
@@ -660,6 +948,14 @@ void MainWindow::on_pushButton_h_clicked()
             LowerCase = true;
         }
     }
+
+    if (Audio_On) {
+        QSound::play("audios/34h.wav");
+    }
+
+    QString info34 = "ХІ хІ: voiceless glottal fricative; pronounced like h in how";
+    ui->textEdit_2->insertPlainText(info34);
+    ui->textEdit_2->insertPlainText("\n\n");
 }
 
 void MainWindow::on_pushButton_c_clicked()
@@ -677,6 +973,14 @@ void MainWindow::on_pushButton_c_clicked()
             LowerCase = true;
         }
     }
+
+    if (Audio_On) {
+        QSound::play("audios/35ts.wav");
+    }
+
+    QString info35 = "Ц ц: voiceless alveolar affricate (sibilant); pronounced like t and s together (like ts in its)";
+    ui->textEdit_2->insertPlainText(info35);
+    ui->textEdit_2->insertPlainText("\n\n");
 }
 
 void MainWindow::on_pushButton_c1_clicked()
@@ -694,6 +998,14 @@ void MainWindow::on_pushButton_c1_clicked()
             LowerCase = true;
         }
     }
+
+    if (Audio_On) {
+        QSound::play("audios/36tsh.wav");
+    }
+
+    QString info36 = "ЦІ цІ: voiceless ejective alveolar affricate (sibilant); has no English equivalent, sounds like very sharp t and s together";
+    ui->textEdit_2->insertPlainText(info36);
+    ui->textEdit_2->insertPlainText("\n\n");
 }
 
 void MainWindow::on_pushButton_ch_clicked()
@@ -711,6 +1023,14 @@ void MainWindow::on_pushButton_ch_clicked()
             LowerCase = true;
         }
     }
+
+    if (Audio_On) {
+        QSound::play("audios/37ch.wav");
+    }
+
+    QString info37 = "Ч ч: voiceless palato-alveolar sibilant affricate; pronounced like ch in chin";
+    ui->textEdit_2->insertPlainText(info37);
+    ui->textEdit_2->insertPlainText("\n\n");
 }
 
 void MainWindow::on_pushButton_ch1_clicked()
@@ -728,6 +1048,14 @@ void MainWindow::on_pushButton_ch1_clicked()
             LowerCase = true;
         }
     }
+
+    if (Audio_On) {
+        QSound::play("audios/38chh.wav");
+    }
+
+    QString info38 = "ЧІ чІ: voiceless ejective palato-alveolar sibilant affricate; pronounced like very sharp ch";
+    ui->textEdit_2->insertPlainText(info38);
+    ui->textEdit_2->insertPlainText("\n\n");
 }
 
 void MainWindow::on_pushButton_sh_clicked()
@@ -745,6 +1073,14 @@ void MainWindow::on_pushButton_sh_clicked()
             LowerCase = true;
         }
     }
+
+    if (Audio_On) {
+        QSound::play("audios/39sh.wav");
+    }
+
+    QString info39 = "Ш ш: voiceless postalveolar fricative (sibilant); pronounced as sh in she";
+    ui->textEdit_2->insertPlainText(info39);
+    ui->textEdit_2->insertPlainText("\n\n");
 }
 
 void MainWindow::on_pushButton_shch_clicked()
@@ -762,6 +1098,14 @@ void MainWindow::on_pushButton_shch_clicked()
             LowerCase = true;
         }
     }
+
+    if (Audio_On) {
+        QSound::play("audios/40shh.wav");
+    }
+
+    QString info40 = "Щ щ: voiceless alveolo-palatal sibilant fricative; has no English equivalent, sounds like very soft sh";
+    ui->textEdit_2->insertPlainText(info40);
+    ui->textEdit_2->insertPlainText("\n\n");
 }
 
 void MainWindow::on_pushButton_hard_sign_clicked()
@@ -779,6 +1123,14 @@ void MainWindow::on_pushButton_hard_sign_clicked()
             LowerCase = true;
         }
     }
+
+    if (Audio_On) {
+        QSound::play("audios/41hard_sign.wav");
+    }
+
+    QString info41 = "Ъ ъ: pronounced as glottal plosive / stop between vowels and in the end of a word, in other positions usually is not pronounced";
+    ui->textEdit_2->insertPlainText(info41);
+    ui->textEdit_2->insertPlainText("\n\n");
 }
 
 void MainWindow::on_pushButton_y_clicked()
@@ -796,6 +1148,14 @@ void MainWindow::on_pushButton_y_clicked()
             LowerCase = true;
         }
     }
+
+    if (Audio_On) {
+        QSound::play("audios/42y.wav");
+    }
+
+    QString info42 = "Ы ы: close central unrounded vowel / high central unrounded vowel; has no English equivalent, sounds somewhat similar to i in sit";
+    ui->textEdit_2->insertPlainText(info42);
+    ui->textEdit_2->insertPlainText("\n\n");
 }
 
 void MainWindow::on_pushButton_soft_sign_clicked()
@@ -813,6 +1173,14 @@ void MainWindow::on_pushButton_soft_sign_clicked()
             LowerCase = true;
         }
     }
+
+    if (Audio_On) {
+        QSound::play("audios/43soft_sign.wav");
+    }
+
+    QString info43 = "Ь ь: this letter is not pronounced";
+    ui->textEdit_2->insertPlainText(info43);
+    ui->textEdit_2->insertPlainText("\n\n");
 }
 
 void MainWindow::on_pushButton_e_clicked()
@@ -830,6 +1198,14 @@ void MainWindow::on_pushButton_e_clicked()
             LowerCase = true;
         }
     }
+
+    if (Audio_On) {
+        QSound::play("audios/44e.wav");
+    }
+
+    QString info44 = "Э э: close-mid front unrounded vowel / high-mid front unrounded vowel; pronounced as e in bet";
+    ui->textEdit_2->insertPlainText(info44);
+    ui->textEdit_2->insertPlainText("\n\n");
 }
 
 void MainWindow::on_pushButton_ju_clicked()
@@ -847,6 +1223,16 @@ void MainWindow::on_pushButton_ju_clicked()
             LowerCase = true;
         }
     }
+
+    if (Audio_On) {
+        QSound::play("audios/45ju.wav");
+    }
+
+    QString info45 = "Ю ю: in the beginning of a word or after a vowel: a combination of voiced palatal approximant and "
+                     "close back rounded vowel / high back rounded vowel, pronounced like you (the whole word); "
+                     "after a consonant: close back rounded vowel / high back rounded vowel; pronounced like oo in book";
+    ui->textEdit_2->insertPlainText(info45);
+    ui->textEdit_2->insertPlainText("\n\n");
 }
 
 void MainWindow::on_pushButton_jue_clicked()
@@ -866,6 +1252,16 @@ void MainWindow::on_pushButton_jue_clicked()
         QString JUE = "ЮЬ";
         ui->textEdit->insertPlainText(JUE);
     }
+
+    if (Audio_On) {
+        QSound::play("audios/46jue.wav");
+    }
+
+    QString info46 = "Юь юь: in the beginning of a word or after a vowel: a combination of voiced palatal approximant and "
+                     "near-open front unrounded vowel / near-low front unrounded vowel; "
+                     "this combination has no equivalent in English, is pronounced as jü in German, sounds somewhat like soft you";
+    ui->textEdit_2->insertPlainText(info46);
+    ui->textEdit_2->insertPlainText("\n\n");
 }
 
 void MainWindow::on_pushButton_ja_clicked()
@@ -883,6 +1279,16 @@ void MainWindow::on_pushButton_ja_clicked()
             LowerCase = true;
         }
     }
+
+    if (Audio_On) {
+        QSound::play("audios/47ja.wav");
+    }
+
+    QString info47 = "Я я: in the beginning of a word or after a vowel: a combination of voiced palatal approximant and "
+                     "open front unrounded vowel / low front unrounded vowel; pronounced like ya in yacht; "
+                     "after a consonant: open front unrounded vowel / low front unrounded vowel; pronounced like a in father";
+    ui->textEdit_2->insertPlainText(info47);
+    ui->textEdit_2->insertPlainText("\n\n");
 }
 
 void MainWindow::on_pushButton_jae_clicked()
@@ -902,6 +1308,15 @@ void MainWindow::on_pushButton_jae_clicked()
         QString JAE = "ЯЬ";
         ui->textEdit->insertPlainText(JAE);
     }
+
+    if (Audio_On) {
+        QSound::play("audios/48jae.wav");
+    }
+
+    QString info48 = "Яь яь: in the beginning of a word or after a vowel: a combination of voiced palatal approximant and "
+                     "open front unrounded vowel / low front unrounded; pronounced as ya in yap";
+    ui->textEdit_2->insertPlainText(info48);
+    ui->textEdit_2->insertPlainText("\n\n");
 }
 
 void MainWindow::on_pushButton_stick_clicked()
@@ -919,11 +1334,250 @@ void MainWindow::on_pushButton_stick_clicked()
             LowerCase = true;
         }
     }
+
+    if (Audio_On) {
+        QSound::play("audios/49ain.wav");
+    }
+
+    QString info49 = "І І: in the beginning of a word, pronounced as voicless pharyngeal plosive / stop; "
+                     "after voiced consonants pronounced as voiced pharyngeal fricative; "
+                     "both consonants have no English equivalents, but the second one is similar to Hebrew ayin (though not in modern pronunciation)";
+    ui->textEdit_2->insertPlainText(info49);
+    ui->textEdit_2->insertPlainText("\n\n");
 }
 
 void MainWindow::on_pushButton_space_clicked()
 {
     ui->textEdit->insertPlainText(" ");
+}
+
+/////////////////////////////////
+// Additional Ingush letters ////
+/////////////////////////////////
+void MainWindow::on_pushButton_b1_clicked()
+{
+    if (UpperCase == false) {
+        QString b1 = "бІ";
+        ui->textEdit->insertPlainText(b1);
+    }
+    else if (Capitalize == true) {
+        QString B1 = "БІ";
+        ui->textEdit->insertPlainText(B1);
+        Capitalize = false;
+        UpperCase = false;
+        LowerCase = true;
+    }
+    else {
+        QString B1 = "БІ";
+        ui->textEdit->insertPlainText(B1);
+    }
+
+    if (Audio_On) {
+        QSound::play("audios/50b1.wav");
+    }
+
+    QString info50 = "БІ бІ: voiced bilabial plosive / stop (pronounced as English b) and "
+                     "voiced pharyngeal fricative (pronounced as Hebrew ayin)";
+    ui->textEdit_2->insertPlainText(info50);
+    ui->textEdit_2->insertPlainText("\n\n");
+}
+
+void MainWindow::on_pushButton_v1_clicked()
+{
+    if (UpperCase == false) {
+        QString v1 = "вІ";
+        ui->textEdit->insertPlainText(v1);
+    }
+    else if (Capitalize == true) {
+        QString V1 = "ВІ";
+        ui->textEdit->insertPlainText(V1);
+        Capitalize = false;
+        UpperCase = false;
+        LowerCase = true;
+    }
+    else {
+        QString V1 = "ВІ";
+        ui->textEdit->insertPlainText(V1);
+    }
+
+    if (Audio_On) {
+        QSound::play("audios/51v1.wav");
+    }
+
+    QString info51 = "ВІ вІ: voiced labiodental fricative (pronounced as English v) and "
+                     "voiced pharyngeal fricative (pronounced as Hebrew ayin)";
+    ui->textEdit_2->insertPlainText(info51);
+    ui->textEdit_2->insertPlainText("\n\n");
+}
+
+
+void MainWindow::on_pushButton_d1_clicked()
+{
+    if (UpperCase == false) {
+        QString d1 = "дІ";
+        ui->textEdit->insertPlainText(d1);
+    }
+    else if (Capitalize == true) {
+        QString D1 = "ДІ";
+        ui->textEdit->insertPlainText(D1);
+        Capitalize = false;
+        UpperCase = false;
+        LowerCase = true;
+    }
+    else {
+        QString D1 = "ДІ";
+        ui->textEdit->insertPlainText(D1);
+    }
+
+    if (Audio_On) {
+        QSound::play("audios/52d1.wav");
+    }
+
+    QString info52 = "ДІ дІ: voiced dental plosive / stop (pronounced as English d) and "
+                     "voiced pharyngeal fricative (pronounced as Hebrew ayin)";
+    ui->textEdit_2->insertPlainText(info52);
+    ui->textEdit_2->insertPlainText("\n\n");
+}
+
+void MainWindow::on_pushButton_zh1_clicked()
+{
+    if (UpperCase == false) {
+        QString zh1 = "жІ";
+        ui->textEdit->insertPlainText(zh1);
+    }
+    else if (Capitalize == true) {
+        QString Zh1 = "ЖІ";
+        ui->textEdit->insertPlainText(Zh1);
+        Capitalize = false;
+        UpperCase = false;
+        LowerCase = true;
+    }
+    else {
+        QString ZH1 = "ЖІ";
+        ui->textEdit->insertPlainText(ZH1);
+    }
+
+    if (Audio_On) {
+        QSound::play("audios/53zh1.wav");
+    }
+
+    QString info53 = "ЖІ жІ: voiced postalveolar fricative (sibilant), pronounced as s in measure or "
+                     "voiced post-alveolar affricate (sibilant), pronounced as j in just and "
+                     "voiced pharyngeal fricative (pronounced as Hebrew ayin)";
+    ui->textEdit_2->insertPlainText(info53);
+    ui->textEdit_2->insertPlainText("\n\n");
+}
+
+void MainWindow::on_pushButton_z1_clicked()
+{
+    if (UpperCase == false) {
+        QString z1 = "зІ";
+        ui->textEdit->insertPlainText(z1);
+    }
+    else if (Capitalize == true) {
+        QString Z1 = "ЗІ";
+        ui->textEdit->insertPlainText(Z1);
+        Capitalize = false;
+        UpperCase = false;
+        LowerCase = true;
+    }
+    else {
+        QString Z1 = "ЗІ";
+        ui->textEdit->insertPlainText(Z1);
+    }
+
+    if (Audio_On) {
+        QSound::play("audios/54z1.wav");
+    }
+
+    QString info54 = "ЗІ зІ: voiced alveolar fricative (sibilant) prounounced as z or voiced alveolar affricate (sibilant) pronounced as d and z together and "
+                     "voiced pharyngeal fricative (pronounced as Hebrew ayin)";
+    ui->textEdit_2->insertPlainText(info54);
+    ui->textEdit_2->insertPlainText("\n\n");
+}
+
+void MainWindow::on_pushButton_j1_clicked()
+{
+    if (UpperCase == false) {
+        QString j1 = "йІ";
+        ui->textEdit->insertPlainText(j1);
+    }
+    else if (Capitalize == true) {
+        QString J1 = "ЙІ";
+        ui->textEdit->insertPlainText(J1);
+        Capitalize = false;
+        UpperCase = false;
+        LowerCase = true;
+    }
+    else {
+        QString J1 = "ЙІ";
+        ui->textEdit->insertPlainText(J1);
+    }
+
+    if (Audio_On) {
+        QSound::play("audios/55j1.wav");
+    }
+
+    QString info55 = "ЙІ йІ: voiced palatal approximant (pronounced as y) and "
+                     "voiced pharyngeal fricative (pronounced as Hebrew ayin)";
+    ui->textEdit_2->insertPlainText(info55);
+    ui->textEdit_2->insertPlainText("\n\n");
+}
+
+void MainWindow::on_pushButton_m1_clicked()
+{
+    if (UpperCase == false) {
+        QString m1 = "нІ";
+        ui->textEdit->insertPlainText(m1);
+    }
+    else if (Capitalize == true) {
+        QString M1 = "НІ";
+        ui->textEdit->insertPlainText(M1);
+        Capitalize = false;
+        UpperCase = false;
+        LowerCase = true;
+    }
+    else {
+        QString M1 = "НІ";
+        ui->textEdit->insertPlainText(M1);
+    }
+
+    if (Audio_On) {
+        QSound::play("audios/56m1.wav");
+    }
+
+    QString info56 = "МІ мІ: voiced bilabial nasal (pronounced as m) and "
+                     "voiced pharyngeal fricative (pronounced as Hebrew ayin)";
+    ui->textEdit_2->insertPlainText(info56);
+    ui->textEdit_2->insertPlainText("\n\n");
+}
+
+void MainWindow::on_pushButton_n1_clicked()
+{
+    if (UpperCase == false) {
+        QString n1 = "нІ";
+        ui->textEdit->insertPlainText(n1);
+    }
+    else if (Capitalize == true) {
+        QString N1 = "НІ";
+        ui->textEdit->insertPlainText(N1);
+        Capitalize = false;
+        UpperCase = false;
+        LowerCase = true;
+    }
+    else {
+        QString N1 = "НІ";
+        ui->textEdit->insertPlainText(N1);
+    }
+
+    if (Audio_On) {
+        QSound::play("audios/57n1.wav");
+    }
+
+    QString info57 = "НІ нІ: voiced alveolar nasal (pronounced as n) and "
+                     "voiced pharyngeal fricative (pronounced as Hebrew ayin)";
+    ui->textEdit_2->insertPlainText(info57);
+    ui->textEdit_2->insertPlainText("\n\n");
 }
 
 
@@ -1160,6 +1814,13 @@ void MainWindow::on_actionClose_triggered()
     ui->textEdit->clear();
 }
 
+// Clearing the information window
+void MainWindow::on_actionClear_info_triggered()
+{
+    ui->textEdit_2->clear();
+}
+
+
 // Hiding the text window
 void MainWindow::on_actionHide_triggered()
 {
@@ -1239,6 +1900,37 @@ void MainWindow::on_actionZoom_Out_triggered()
     ui->textEdit->zoomOut();
 }
 
+///////////////////////////
+// Menu "Audio" options
+///////////////////////////
+
+void MainWindow::on_actionIngush_alphabet_triggered()
+{
+    QSound::play("audios/alphabet_ingush.wav");
+}
+
+void MainWindow::on_actionAlphabet_1_triggered()
+{
+    QSound::play("audios/alphabet_1.wav");
+}
+
+void MainWindow::on_actionAlphabet_2_triggered()
+{
+    QSound::play("audios/alphabet_2.wav");
+}
+
+void MainWindow::on_actionAlphabet_3_triggered()
+{
+    QSound::play("audios/alphabet_3.wav");
+}
+
+void MainWindow::on_actionAlphabet_4_triggered()
+{
+    QSound::play("audios/alphabet_4.wav");
+}
+
+
+
 /////////////////////////
 // Menu "Help" options //
 /////////////////////////
@@ -1271,3 +1963,4 @@ void MainWindow::on_actionAbout_Qt_triggered()
 {
     QMessageBox::aboutQt(0);
 }
+
