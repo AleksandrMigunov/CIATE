@@ -1200,6 +1200,12 @@
       <height>30</height>
      </rect>
     </property>
+    <property name="toolTip">
+     <string>These letter combinations are not in Ingush alphabet</string>
+    </property>
+    <property name="statusTip">
+     <string>These letter combinations are not in Ingush alphabet</string>
+    </property>
     <property name="text">
      <string>Additional Ingush letters</string>
     </property>
@@ -1224,9 +1230,6 @@
     <addaction name="actionSave_as_UTF_8"/>
     <addaction name="actionSave_as"/>
     <addaction name="actionClose"/>
-    <addaction name="separator"/>
-    <addaction name="actionHide"/>
-    <addaction name="actionShow"/>
     <addaction name="separator"/>
     <addaction name="actionClear_info"/>
     <addaction name="separator"/>
@@ -1271,9 +1274,21 @@
     <addaction name="actionAlphabet_3"/>
     <addaction name="actionAlphabet_4"/>
    </widget>
+   <widget class="QMenu" name="menuMode">
+    <property name="title">
+     <string>Mode</string>
+    </property>
+    <addaction name="actionText_and_Information"/>
+    <addaction name="actionOnly_Text"/>
+    <addaction name="actionOnly_information"/>
+    <addaction name="separator"/>
+    <addaction name="actionClear_information_automatically"/>
+    <addaction name="actionDo_not_clear_information"/>
+   </widget>
    <addaction name="menuFile"/>
    <addaction name="menuEdit"/>
    <addaction name="menuView"/>
+   <addaction name="menuMode"/>
    <addaction name="menuAudio"/>
    <addaction name="menuHelp"/>
   </widget>
@@ -1333,16 +1348,6 @@
     <string>Zoom Out</string>
    </property>
   </action>
-  <action name="actionHide">
-   <property name="text">
-    <string>Hide text window</string>
-   </property>
-  </action>
-  <action name="actionShow">
-   <property name="text">
-    <string>Show text window</string>
-   </property>
-  </action>
   <action name="actionOpen">
    <property name="text">
     <string>Open</string>
@@ -1380,22 +1385,22 @@
   </action>
   <action name="actionAlphabet_1">
    <property name="text">
-    <string>Alphabet 1</string>
+    <string>Chechen alphabet 1</string>
    </property>
   </action>
   <action name="actionAlphabet_2">
    <property name="text">
-    <string>Alphabet 2</string>
+    <string>Chechen alphabet 2</string>
    </property>
   </action>
   <action name="actionAlphabet_3">
    <property name="text">
-    <string>Alphabet 3</string>
+    <string>Chechen alphabet 3</string>
    </property>
   </action>
   <action name="actionAlphabet_4">
    <property name="text">
-    <string>Alphabet 4</string>
+    <string>Chechen alphabet 4</string>
    </property>
   </action>
   <action name="actionClear_info">
@@ -1406,6 +1411,31 @@
   <action name="actionIngush_alphabet">
    <property name="text">
     <string>Ingush alphabet</string>
+   </property>
+  </action>
+  <action name="actionText_and_Information">
+   <property name="text">
+    <string>Text and information</string>
+   </property>
+  </action>
+  <action name="actionOnly_Text">
+   <property name="text">
+    <string>Only text</string>
+   </property>
+  </action>
+  <action name="actionOnly_information">
+   <property name="text">
+    <string>Only information</string>
+   </property>
+  </action>
+  <action name="actionClear_information_automatically">
+   <property name="text">
+    <string>Clear information automatically</string>
+   </property>
+  </action>
+  <action name="actionDo_not_clear_information">
+   <property name="text">
+    <string>Do not clear information</string>
    </property>
   </action>
  </widget>

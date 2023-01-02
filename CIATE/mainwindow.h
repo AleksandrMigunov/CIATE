@@ -35,6 +35,9 @@ public:
     QString NewOpened;
     QString Encoding;
     bool Audio_On;
+    bool Info_On;
+    bool Text_On;
+    bool Clear_On;
 
 private slots:
     void on_pushButton_upper_clicked();
@@ -155,10 +158,6 @@ private slots:
 
     void on_actionClose_triggered();
 
-    void on_actionHide_triggered();
-
-    void on_actionShow_triggered();
-
     void on_actionExit_triggered();
 
     void on_actionUndo_triggered();
@@ -212,6 +211,16 @@ private slots:
     void on_pushButton_m1_clicked();
 
     void on_pushButton_n1_clicked();
+
+    void on_actionText_and_Information_triggered();
+
+    void on_actionOnly_Text_triggered();
+
+    void on_actionOnly_information_triggered();
+
+    void on_actionClear_information_automatically_triggered();
+
+    void on_actionDo_not_clear_information_triggered();
 
 private:
     Ui::MainWindow *ui;
